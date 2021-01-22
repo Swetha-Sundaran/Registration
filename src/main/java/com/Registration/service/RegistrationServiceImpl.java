@@ -17,7 +17,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Override
     public Requestor createRequestor(Requestor requestor) 
     {
-		URI uri = URI.create("http://localhost:9092/createrequestor");
+		URI uri = URI.create("http://localhost:9094/createrequestor");
         return this.restTemplate.postForEntity(uri, requestor, Requestor.class).getBody();
         
     }
@@ -29,7 +29,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	}
 	@Override
     public Donor createDonor(Donor donor) {
-		URI uri = URI.create("http://localhost:9092/createdonor");
+		URI uri = URI.create("http://localhost:9090/createdonor");
         return this.restTemplate.postForEntity(uri, donor, Donor.class).getBody();
         
 	}
