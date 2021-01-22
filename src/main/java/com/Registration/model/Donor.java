@@ -26,4 +26,8 @@ public class Donor {
 	private String bloodGlucoseLevel;
 	@Column(name = "Donor_Status")
 	private String approveDonor;
+	@Column(name = "userName", length = 20)
+	private String userName;
+	@Column(name = "password", length = 20)
+	private String password;
 }

@@ -35,4 +35,10 @@ public class Admin {
 	
 	@Column(name = "BLOODBANK_NAME", length = 10)
 	private String bloodBankName;
+	
+	@Column(name = "userName", length = 20)
+	private String userName;
+
+	@Column(name = "password", length = 20)
+	private String password;
 }

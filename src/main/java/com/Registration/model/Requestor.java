@@ -61,5 +61,11 @@ public class Requestor {
 	
 	@Column(name = "approvalStatus", length = 10)
     private String approvalStatus;
+	
+	@Column(name = "userName", length = 20)
+	private String userName;
+
+	@Column(name = "password", length = 20)
+	private String password;
 
 }
